@@ -1,0 +1,324 @@
+/* GLOBAL */
+:root {
+  --main-color: #8e7754;
+  --main-font: "Alegreya Sans", sans-serif;
+  --sec-font: "Alegreya", serif;
+}
+a {
+  text-decoration: none !important;
+  color: black !important;
+}
+.side-setting {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  background-color: white;
+  cursor: pointer;
+  padding: 15px 5px;
+}
+span {
+  padding: 30px;
+  cursor: pointer;
+}
+.fa-gear {
+  display: block;
+}
+.fa-xmark {
+  display: none;
+}
+.setting {
+  right: -160px;
+  bottom: 0;
+  top: 0;
+}
+* {
+  transition: all 0.5s ease;
+}
+
+/* HEADER AND NAV */
+header {
+  width: 100%;
+  height: 100vh;
+  color: white;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("../img/drew-coffman-1872.jpg");
+  background-position: center;
+  background-size: cover;
+}
+nav {
+  transition: all 1s;
+}
+nav .container>div{
+  display: flex;
+}
+nav a {
+  color: rgb(240, 240, 240) !important;
+  font-weight: 400;
+  font-size: 18px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  transition: all 0.1s;
+}
+.nabar {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.active-li {
+  color: var(--main-color) !important;
+  font-weight: bolder;
+  overflow: hidden;
+  /* height: 100%; */
+  border-top: 4px var(--main-color) solid;
+}
+
+.welcome {
+  font-size: 22px;
+  font-family: var(--main-font);
+  font-weight: 400;
+  text-align: center;
+}
+.weAre {
+  font-size: 24px;
+  font-family: var(--main-font);
+  font-weight: 400;
+  line-height: 1.86em;
+  text-align: center;
+}
+.FamilyBakery {
+  font-size: 76px;
+  font-family: var(--sec-font);
+  font-weight: 400;
+  color: #ffffff;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+.logo {
+  width: 150px;
+  padding: 10px;
+  /* width:150px; */
+}
+.btn1 {
+  color: #fff !important;
+  background-color: var(--main-color);
+  letter-spacing: 0px;
+  font-size: 16px;
+  padding: 18px 28px;
+
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: "Alegreya Sans";
+  font-weight: 700;
+  transition: all 0.3s;
+}
+.btn1:hover,
+.btn2:hover {
+  background-color: white;
+  color: black !important;
+}
+.btn2 {
+  color: #fff !important;
+  border-color: #fff !important;
+  background: none;
+  text-transform: none;
+  letter-spacing: 0px;
+  font-size: 16px;
+  transition: all 0.3s;
+  padding: 15px 28px;
+  margin: 2px 12px;
+  border-radius: 6px;
+  border-style: solid;
+  font-size: 16px;
+  font-family: var(--main-font);
+  font-weight: 700;
+}
+
+/* SEC */
+#sec h2 {
+  font-size: 32px;
+  color: #303030;
+  font-weight: 400;
+  font-family: var(--sec-font);
+}
+.ico {
+  width: 50px;
+  height: 50px;
+  border: 2px solid var(--main-color);
+  color: var(--main-color);
+  font-size: 20px;
+}
+.paragraf {
+  font-family: var(--main-font);
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.secdivPar1 {
+  font-family: var(--main-font);
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.secdivPar2 {
+  font-family: var(--main-font);
+  font-size: 17px;
+  font-weight: 400;
+  width: 4px;
+}
+
+.sec-div {
+  background-color: #ffffff;
+}
+/* THIRD */
+#third {
+  background-color: #f8f8f8;
+}
+
+#third h2 {
+  font-weight: 400;
+  font-size: 32px;
+  font-family: var(--sec-font);
+  color: #494949;
+}
+
+#third p {
+  font-family: var(--main-font);
+  font-size: 17px;
+  font-weight: 400;
+  color: #494949;
+  line-height: 40px;
+  letter-spacing: 0.5px;
+}
+
+/* FORTH */
+
+.ourbaking-div {
+  text-align: center;
+}
+
+#forth h3 {
+  font-size: 30px;
+  font-family: var(--sec-font);
+  font-weight: 400;
+}
+
+#forth p {
+  font-family: var(--main-font);
+  font-size: 17px;
+  font-weight: 400;
+  color: #303030b4;
+}
+
+.forth-div-img {
+  text-align: center;
+}
+
+#forth h4 {
+  font-size: 22px;
+  font-family: var(--sec-font);
+  font-weight: 400;
+}
+
+/* FIFTH */
+#fifth {
+  background-color: #f8f8f8;
+}
+
+#fifth h2 {
+  font-size: 32px;
+  font-family: var(--sec-font);
+  font-weight: 400;
+  color: #303030;
+}
+
+#fifth p {
+  font-family: var(--main-font);
+  font-size: 20px;
+  font-weight: 400;
+  color: #303030b4;
+}
+
+.ic {
+  width: 40px;
+  height: 40px;
+  background-color: var(--main-color);
+}
+
+#fifth h3 {
+  font-family: var(--main-font);
+  font-size: 17px;
+  font-weight: 400;
+  color: #303030b4;
+  margin-left: 8px;
+}
+/* SIXTH */
+#sixth {
+  background-color: #403d38;
+}
+#sixth h3 {
+  color: #ffffff;
+  font-size: 24x;
+  font-family: var(--sec-font);
+  font-weight: 100;
+}
+.six-p {
+  line-height: 40px;
+}
+#sixth p {
+  color: #ffffff62;
+}
+#sixth li {
+  list-style: none;
+  color: #ffffff62;
+  border-bottom: solid 1px #ffffff23;
+  padding: 15px 0px;
+}
+/* SEVENTH */
+.seventh {
+  padding: 50px 0px;
+  background-color: #353330;
+}
+
+.connect {
+  color: #ffffff62;
+  font-size: 15px;
+}
+.footic {
+  background-color: #484540;
+  color: #8c8a86;
+  cursor: pointer;
+}
+.footic:hover {
+  background-color: #3068e0;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  img {
+    width: 29%;
+    /* display: block;   */
+  }
+  nav .container {
+    display: block !important;
+    text-align: center;
+  }
+  nav .container>div{
+    display: flex;
+    flex-direction: column;
+    background-color: #3068e0;
+    padding: 5px;
+    display: none ;
+
+  }
+   .nabar {
+    display: block !important;
+    cursor: pointer;
+  }
+}
